@@ -1,0 +1,9 @@
+
+public class persona {
+	
+	private String codigo, nombre, membrecia;
+	public String getCodigo(){
+		return codigo;
+	}
+
+}

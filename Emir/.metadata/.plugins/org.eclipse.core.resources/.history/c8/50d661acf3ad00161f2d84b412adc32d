@@ -1,0 +1,8 @@
+
+public class persona {
+	
+	public String getCodigo(){
+		return Codigo;
+	}
+
+}

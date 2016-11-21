@@ -1,0 +1,21 @@
+
+public class persona {
+	
+	private int codigo;
+	private String nombre, membrecia;
+	
+	public persona(){
+		
+	}
+	
+	public persona (int codigo, String nombre, String membrecia ){
+		this.codigo = codigo;
+		this.nombre = nombre;
+		this.membrecia = membrecia;
+	}
+	
+	public int getCodigo(){
+		return codigo;
+	}
+
+}

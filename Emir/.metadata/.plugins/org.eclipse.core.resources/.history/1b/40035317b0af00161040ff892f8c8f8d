@@ -1,0 +1,58 @@
+import java.awt.GridLayout;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class informacion extends JFrame {
+	private JLabel informacion, codigo, etiquetaNombre;
+
+	public informacion() {
+		setLayout(new GridLayout(4, 2));
+		conexion conn = new conexion();
+		JLabel codigo = null, pelicula = null, cliente = null;
+
+		try {
+			informacion = new JLabel(" INFORMACION DE RENTA ", JLabel.CENTER);
+			add(informacion);
+
+			ResultSet rs = conn
+					.consultar("SELECT * FROM renta,cliente,video where n_cliente=codigo_cliente");
+
+			rs.next();
+			codigo = new JLabel("Codigo cliente: " + rs.getObject("n_cliente"),
+					JLabel.CENTER);
+			rs.next();
+			cliente = new JLabel("Nombre del cliente: "
+					+ rs.getObject("nombre"), JLabel.CENTER);
+
+			add(codigo);
+			add(cliente);
+
+			Object datos[] = new Object[4];
+
+			while (rs.next()) {
+				for (int i = 0; i < 4; i++) {
+					datos[i] = rs.getObject(i + 1);
+				}
+				for (int i = 0; i < 10000; i++) {
+					pelicula = new JLabel("Codigo pelicula: " + datos[i],
+							JLabel.CENTER);
+				}
+
+			}
+
+			rs.close();
+		} catch (SQLException e1) {
+			e1.printStackTrace();
+		}
+	}
+
+	public static void main(String[] ar) {
+		informacion formulario3 = new informacion();
+		formulario3.setBounds(0, 0, 400, 200);
+		formulario3.setLocationRelativeTo(null);
+		formulario3.setVisible(true);
+	}
+}

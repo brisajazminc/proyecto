@@ -1,0 +1,62 @@
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import com.mysql.jdbc.Connection;
+import com.mysql.jdbc.PreparedStatement;
+import com.mysql.jdbc.Statement;
+
+public class conexion {
+	private PreparedStatement parainsertar;
+	private Connection con;
+	private Statement stmmt;
+
+	public void insertar(persona p) throws SQLException {
+		String url = "jdbc:mysql://localhost:3306/rentavideos?user=root";
+		con = (Connection) DriverManager.getConnection(url);
+		stmmt = (Statement) con.createStatement();
+
+		parainsertar = (PreparedStatement) con
+				.prepareStatement("INSERT INTO cliente(codigo_cliente, nombre, membrecia)"
+						+ " values(?,?,?)");
+
+		parainsertar.setString(1, p.getCodigo());
+		parainsertar.setString(2, p.getNombre());
+		parainsertar.setString(3, p.getMembrecia());
+
+		parainsertar.executeUpdate();
+	}
+
+	public void video(rentavideos r) throws SQLException {
+
+		String url = "jdbc:mysql://localhost:3306/rentavideos?user=root";
+		con = (Connection) DriverManager.getConnection(url);
+		stmmt = (Statement) con.createStatement();
+
+		parainsertar = (PreparedStatement) con
+				.prepareStatement("INSERT INTO renta(n_cliente, n_pelicula, fecha)"
+						+ " values(?,?,?)");
+
+		parainsertar.setString(1, r.getCliente());
+		parainsertar.setString(2, r.getPelicula());
+		parainsertar.setString(3, r.getFecha());
+
+		parainsertar.executeUpdate();
+	}
+
+	public ResultSet consultar(String sql) {
+		String url = "jdbc:mysql://localhost:3306/rentavideos?user=root";
+		con = (Connection) DriverManager.getConnection(url);
+		stmmt = (Statement) con.createStatement();
+
+		ResultSet resultado;
+		try {
+			resultado = stmmt.executeQuery(sql);
+		} catch (SQLException e) {
+			e.printStackTrace();
+			return null;
+		}
+		return resultado;
+
+	}
+}

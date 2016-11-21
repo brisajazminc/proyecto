@@ -1,0 +1,40 @@
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.Scanner;
+
+import com.mysql.jdbc.PreparedStatement;
+public class Principal {
+	MyDataAcces conexion = new MyDataAcces();
+static Scanner entrada = new Scanner(System.in); 
+	public static void main(String[] args) {
+	
+
+		
+		System.out.println(" \t Menu");
+		System.out.println("1. Registrar cliente");
+		System.out.print("Opcion: ");
+		 int opc = entrada.nextInt(); 
+
+		 switch (opc){
+		 case 1:
+			 registrar();
+			 break;
+		 }
+	}
+	
+	public static void registrar(){
+		
+		Statement st = conexion.createStatement();
+		
+		System.out.println(" \t + Registrar cliente +");
+		System.out.print("Codigo cliente: ");
+		int cc = entrada.nextInt();
+		System.out.print("Nombre: ");
+		String nombre = entrada.next();
+		System.out.print("Membrecia: ");
+		int membrecia = entrada.nextInt();
+		
+		
+	}
+}
+

@@ -1,0 +1,38 @@
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import javax.swing.JFrame;
+import javax.swing.table.DefaultTableModel;
+
+public class informacion extends JFrame {
+	DefaultTableModel tabla;
+	conexion conn = new conexion();
+
+	public informacion() {
+		tabla = new DefaultTableModel(null, getColumnas());
+		setFilas();
+		initComponents();
+	}
+
+	private String[] getColumnas() {
+		String columna[] = new String[] { "Codigo cliente", "nombre",
+				"codigo pelicula", "nombre pelicula" };
+		return columna;
+	}
+
+	private void setFilas() {
+		try {
+			ResultSet rs = conn
+					.consultar("SELECT * FROM renta,cliente,video where n_cliente=codigo_cliente");
+
+			Object datos[] = new Object[4];
+			
+			while(rs.next()){
+				
+			}
+
+		} catch (SQLException ex) {
+
+		}
+	}
+}

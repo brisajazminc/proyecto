@@ -1,0 +1,146 @@
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+
+public class Formulario extends JFrame {
+
+  private JPanel contentPane;
+  private JTextField tf1;
+  private JTextField tf2;
+  private JLabel labelResultado;
+  private JButton btnConsultaPorCdigo;
+  private JLabel lblIngreseCdigoDe;
+  private JTextField tf3;
+
+  /**
+   * Launch the application.
+   */
+  public static void main(String[] args) {
+
+			JFrame miVentana = new JFrame("Analizador Lexico");
+
+			miVentana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+			miVentana.setSize(650, 380);
+			miVentana.setResizable(false);
+			miVentana.setLocationRelativeTo(null);
+
+			Principal principal = new Principal();
+
+			miVentana.add(principal);
+
+			try {
+				UIManager.setLookAndFeel(new NimbusLookAndFeel());
+			} catch (Exception e) {
+				System.err.println("Look and feel not set. ");
+			}
+
+			miVentana.setVisible(true);
+
+		}
+
+}
+
+class Principal extends JPanel implements ActionListener {
+
+	JScrollPane scrollcodigo, scrollanalizador;
+	JTextArea analizador, codigo;
+
+	JButton[] boton = new JButton[2];
+
+	public Principal() {
+		setLayout(null);
+
+		// Title.
+		TitledBorder titleBorder = new TitledBorder("Analizador Lexico");
+		titleBorder.setTitleFont(new Font("French Script MT", Font.PLAIN, 40));
+		setBorder(titleBorder);
+
+		// Subtitle.
+		Font fuente = new Font("Goudy Old Style", Font.PLAIN, 18);
+		JLabel a2 = new JLabel("Texto a analizar");
+		a2.setBounds(60, 25, 400, 100);
+		a2.setFont(fuente);
+		add(a2);
+
+		a2 = new JLabel("Analisis Lexico");
+		a2.setBounds(470, 25, 400, 100);
+		a2.setFont(fuente);
+		add(a2);
+
+		// JTextArea
+		analizador = new JTextArea();
+		analizador.setEditable(true);
+		scrollanalizador = new JScrollPane(analizador);
+		scrollanalizador.setBounds(30, 100, 200, 200);
+		add(scrollanalizador);
+
+		codigo = new JTextArea();
+		codigo.setEditable(false);
+		scrollcodigo = new JScrollPane(codigo);
+		scrollcodigo.setBounds(420, 100, 200, 200);
+		add(scrollcodigo);
+
+		// buttons.
+		fuente = new Font("Latha", Font.BOLD, 15);
+
+		for (int i = 0; i < boton.length; i++) {
+			boton[i] = new JButton();
+
+			if (i == 0) {
+				boton[0].setText("Scanner >>");
+				boton[0].setBounds(250, 150, 150, 30);
+			} else {
+				boton[1].setText("Parser >>");
+				boton[1].setBounds(250, 200, 150, 30);
+			}
+
+			boton[i].setToolTipText("Click en este botón para analizar texto.");
+			boton[i].setFont(fuente);
+			boton[i].addActionListener(this);
+			boton[i].setFocusable(false);
+			add(boton[i]);
+		}
+	}
+
+	public void tokens(String cadena) {
+		String[] typeTokens = { "PR \t", "ID \t", "NUM \t", "OPER \t",
+				"SIMBESPECIAL  ", "ASIG \t", "PUNT \t" };
+		String patron = ("(inicio|fin|int|boolean|while|println)|([a-zA-Z]+)|([0-9]+)|([+|==])|([(|)|{|}])|(=)|(;)");
+
+		Pattern p = Pattern.compile(patron);
+		Matcher matcher = p.matcher(cadena);
+
+		String[] tokens = new String[matcher.groupCount()];
+		while (matcher.find()) {
+			for (int i = 0; i < tokens.length; i++) {
+
+				tokens[i] = matcher.group(i + 1);
+				if (tokens[i] != null)
+					codigo.append(typeTokens[i] + " " + tokens[i] + "\n");
+			}
+		}
+	}
+
+	public void actionPerformed(ActionEvent e) {
+		JButton botones = (JButton) e.getSource();
+
+		if (botones == boton[0]) {
+			codigo.setText("");
+			String cadena = analizador.getText();
+			tokens(cadena);
+		}
+	}
+}

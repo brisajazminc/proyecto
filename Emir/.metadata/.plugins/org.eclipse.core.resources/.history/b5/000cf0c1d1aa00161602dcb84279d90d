@@ -1,0 +1,66 @@
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+
+public class Formulario extends JFrame {
+
+  private JPanel contentPane;
+  private JTextField tf1;
+  private JTextField tf2;
+  private JLabel labelResultado;
+  private JButton btnConsultaPorCdigo;
+  private JLabel lblIngreseCdigoDe;
+  private JTextField tf3;
+
+  /**
+   * Launch the application.
+   */
+  public static void main(String[] args) {
+
+			JFrame miVentana = new JFrame("Analizador Lexico");
+
+			miVentana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+			miVentana.setSize(650, 380);
+			miVentana.setResizable(false);
+			miVentana.setLocationRelativeTo(null);
+
+			Principal principal = new Principal();
+
+			miVentana.add(principal);
+
+			try {
+				UIManager.setLookAndFeel(new NimbusLookAndFeel());
+			} catch (Exception e) {
+				System.err.println("Look and feel not set. ");
+			}
+
+			miVentana.setVisible(true);
+
+		}
+
+}
+
+class Principal extends JPanel implements ActionListener {
+
+	JScrollPane scrollcodigo, scrollanalizador;
+	JTextArea analizador, codigo;
+
+	JButton[] boton = new JButton[2];
+
+	public Principal() {
+
+	}
+}

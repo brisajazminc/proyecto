@@ -1,0 +1,317 @@
+!SESSION 2016-11-14 17:28:40.110 -----------------------------------------------
+eclipse.buildId=I20100608-0911
+java.version=1.7.0_79
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=es_MX
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.jdt.core 2 0 2016-11-14 17:44:12.682
+!MESSAGE The Java indexing could not index C:/Users/BRISSA/Downloads/mysql-connector-java-6.0.5.jar|com/mysql/cj/api/x/Statement.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2016-11-14 17:44:12.741
+!MESSAGE The Java indexing could not index C:/Users/BRISSA/Downloads/mysql-connector-java-6.0.5.jar|com/mysql/cj/core/conf/url/ConnectionUrl.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2016-11-14 17:44:12.743
+!MESSAGE The Java indexing could not index C:/Users/BRISSA/Downloads/mysql-connector-java-6.0.5.jar|com/mysql/cj/core/conf/url/HostInfo.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2016-11-14 17:44:12.745
+!MESSAGE The Java indexing could not index C:/Users/BRISSA/Downloads/mysql-connector-java-6.0.5.jar|com/mysql/cj/core/conf/url/LoadbalanceConnectionUrl.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2016-11-14 17:44:12.746
+!MESSAGE The Java indexing could not index C:/Users/BRISSA/Downloads/mysql-connector-java-6.0.5.jar|com/mysql/cj/core/conf/url/MysqlxConnectionUrl.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2016-11-14 17:44:12.748
+!MESSAGE The Java indexing could not index C:/Users/BRISSA/Downloads/mysql-connector-java-6.0.5.jar|com/mysql/cj/core/conf/url/ReplicationConnectionUrl.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2016-11-14 17:44:12.770
+!MESSAGE The Java indexing could not index C:/Users/BRISSA/Downloads/mysql-connector-java-6.0.5.jar|com/mysql/cj/core/util/StringUtils.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2016-11-14 17:44:12.781
+!MESSAGE The Java indexing could not index C:/Users/BRISSA/Downloads/mysql-connector-java-6.0.5.jar|com/mysql/cj/jdbc/ConnectionImpl$ExceptionInterceptorChain.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2016-11-14 17:44:12.785
+!MESSAGE The Java indexing could not index C:/Users/BRISSA/Downloads/mysql-connector-java-6.0.5.jar|com/mysql/cj/jdbc/ConnectionImpl.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2016-11-14 17:44:12.800
+!MESSAGE The Java indexing could not index C:/Users/BRISSA/Downloads/mysql-connector-java-6.0.5.jar|com/mysql/cj/jdbc/MysqlDataSource.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2016-11-14 17:44:12.986
+!MESSAGE The Java indexing could not index C:/Users/BRISSA/Downloads/mysql-connector-java-6.0.5.jar|com/mysql/cj/jdbc/ha/LoadBalancedConnectionProxy.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2016-11-14 17:44:12.992
+!MESSAGE The Java indexing could not index C:/Users/BRISSA/Downloads/mysql-connector-java-6.0.5.jar|com/mysql/cj/jdbc/ha/ReplicationConnectionProxy.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2016-11-14 17:44:13.016
+!MESSAGE The Java indexing could not index C:/Users/BRISSA/Downloads/mysql-connector-java-6.0.5.jar|com/mysql/cj/jdbc/util/ResultSetUtil.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2016-11-14 17:44:13.019
+!MESSAGE The Java indexing could not index C:/Users/BRISSA/Downloads/mysql-connector-java-6.0.5.jar|com/mysql/cj/mysqla/MysqlaSession.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2016-11-14 17:44:13.445
+!MESSAGE The Java indexing could not index C:/Users/BRISSA/Downloads/mysql-connector-java-6.0.5.jar|com/mysql/cj/mysqlx/ExprParser.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2016-11-14 17:44:13.448
+!MESSAGE The Java indexing could not index C:/Users/BRISSA/Downloads/mysql-connector-java-6.0.5.jar|com/mysql/cj/mysqlx/ExprUnparser.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2016-11-14 17:44:13.450
+!MESSAGE The Java indexing could not index C:/Users/BRISSA/Downloads/mysql-connector-java-6.0.5.jar|com/mysql/cj/mysqlx/ExprUtil.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2016-11-14 17:44:13.453
+!MESSAGE The Java indexing could not index C:/Users/BRISSA/Downloads/mysql-connector-java-6.0.5.jar|com/mysql/cj/mysqlx/FilterParams.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2016-11-14 17:44:13.455
+!MESSAGE The Java indexing could not index C:/Users/BRISSA/Downloads/mysql-connector-java-6.0.5.jar|com/mysql/cj/mysqlx/InsertParams.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2016-11-14 17:44:13.462
+!MESSAGE The Java indexing could not index C:/Users/BRISSA/Downloads/mysql-connector-java-6.0.5.jar|com/mysql/cj/mysqlx/MysqlxSession.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2016-11-14 17:44:13.465
+!MESSAGE The Java indexing could not index C:/Users/BRISSA/Downloads/mysql-connector-java-6.0.5.jar|com/mysql/cj/mysqlx/ResultCreatingResultListener.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2016-11-14 17:44:13.468
+!MESSAGE The Java indexing could not index C:/Users/BRISSA/Downloads/mysql-connector-java-6.0.5.jar|com/mysql/cj/mysqlx/UpdateParams.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2016-11-14 17:44:13.470
+!MESSAGE The Java indexing could not index C:/Users/BRISSA/Downloads/mysql-connector-java-6.0.5.jar|com/mysql/cj/mysqlx/devapi/AbstractColumnDef.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2016-11-14 17:44:13.473
+!MESSAGE The Java indexing could not index C:/Users/BRISSA/Downloads/mysql-connector-java-6.0.5.jar|com/mysql/cj/mysqlx/devapi/AbstractDataResult.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2016-11-14 17:44:13.480
+!MESSAGE The Java indexing could not index C:/Users/BRISSA/Downloads/mysql-connector-java-6.0.5.jar|com/mysql/cj/mysqlx/devapi/AbstractSession.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2016-11-14 17:44:13.482
+!MESSAGE The Java indexing could not index C:/Users/BRISSA/Downloads/mysql-connector-java-6.0.5.jar|com/mysql/cj/mysqlx/devapi/AddStatementImpl.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2016-11-14 17:44:13.486
+!MESSAGE The Java indexing could not index C:/Users/BRISSA/Downloads/mysql-connector-java-6.0.5.jar|com/mysql/cj/mysqlx/devapi/CreateCollectionIndexStatementImpl.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2016-11-14 17:44:13.488
+!MESSAGE The Java indexing could not index C:/Users/BRISSA/Downloads/mysql-connector-java-6.0.5.jar|com/mysql/cj/mysqlx/devapi/CreateTableStatementImpl.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2016-11-14 17:44:13.490
+!MESSAGE The Java indexing could not index C:/Users/BRISSA/Downloads/mysql-connector-java-6.0.5.jar|com/mysql/cj/mysqlx/devapi/DeleteStatementImpl.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2016-11-14 17:44:13.496
+!MESSAGE The Java indexing could not index C:/Users/BRISSA/Downloads/mysql-connector-java-6.0.5.jar|com/mysql/cj/mysqlx/devapi/DevapiRowFactory.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2016-11-14 17:44:13.498
+!MESSAGE The Java indexing could not index C:/Users/BRISSA/Downloads/mysql-connector-java-6.0.5.jar|com/mysql/cj/mysqlx/devapi/DocResultImpl.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2016-11-14 17:44:13.500
+!MESSAGE The Java indexing could not index C:/Users/BRISSA/Downloads/mysql-connector-java-6.0.5.jar|com/mysql/cj/mysqlx/devapi/DropCollectionIndexStatementImpl.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2016-11-14 17:44:13.502
+!MESSAGE The Java indexing could not index C:/Users/BRISSA/Downloads/mysql-connector-java-6.0.5.jar|com/mysql/cj/mysqlx/devapi/InsertStatementImpl.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2016-11-14 17:44:13.505
+!MESSAGE The Java indexing could not index C:/Users/BRISSA/Downloads/mysql-connector-java-6.0.5.jar|com/mysql/cj/mysqlx/devapi/ModifyStatementImpl.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2016-11-14 17:44:13.511
+!MESSAGE The Java indexing could not index C:/Users/BRISSA/Downloads/mysql-connector-java-6.0.5.jar|com/mysql/cj/mysqlx/devapi/RemoveStatementImpl.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2016-11-14 17:44:13.514
+!MESSAGE The Java indexing could not index C:/Users/BRISSA/Downloads/mysql-connector-java-6.0.5.jar|com/mysql/cj/mysqlx/devapi/RowResultImpl.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2016-11-14 17:44:13.516
+!MESSAGE The Java indexing could not index C:/Users/BRISSA/Downloads/mysql-connector-java-6.0.5.jar|com/mysql/cj/mysqlx/devapi/SchemaImpl.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2016-11-14 17:44:13.519
+!MESSAGE The Java indexing could not index C:/Users/BRISSA/Downloads/mysql-connector-java-6.0.5.jar|com/mysql/cj/mysqlx/devapi/SqlStatementImpl.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2016-11-14 17:44:13.521
+!MESSAGE The Java indexing could not index C:/Users/BRISSA/Downloads/mysql-connector-java-6.0.5.jar|com/mysql/cj/mysqlx/devapi/UpdateStatementImpl.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2016-11-14 17:44:13.529
+!MESSAGE The Java indexing could not index C:/Users/BRISSA/Downloads/mysql-connector-java-6.0.5.jar|com/mysql/cj/mysqlx/io/AsyncMessageReader$SyncReader.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2016-11-14 17:44:13.531
+!MESSAGE The Java indexing could not index C:/Users/BRISSA/Downloads/mysql-connector-java-6.0.5.jar|com/mysql/cj/mysqlx/io/AsyncMessageReader.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2016-11-14 17:44:13.533
+!MESSAGE The Java indexing could not index C:/Users/BRISSA/Downloads/mysql-connector-java-6.0.5.jar|com/mysql/cj/mysqlx/io/AsyncMessageWriter.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2016-11-14 17:44:13.536
+!MESSAGE The Java indexing could not index C:/Users/BRISSA/Downloads/mysql-connector-java-6.0.5.jar|com/mysql/cj/mysqlx/io/MessageBuilder.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2016-11-14 17:44:13.539
+!MESSAGE The Java indexing could not index C:/Users/BRISSA/Downloads/mysql-connector-java-6.0.5.jar|com/mysql/cj/mysqlx/io/MysqlxDecoder.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2016-11-14 17:44:13.547
+!MESSAGE The Java indexing could not index C:/Users/BRISSA/Downloads/mysql-connector-java-6.0.5.jar|com/mysql/cj/mysqlx/io/MysqlxProtocol.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2016-11-14 17:44:13.550
+!MESSAGE The Java indexing could not index C:/Users/BRISSA/Downloads/mysql-connector-java-6.0.5.jar|com/mysql/cj/mysqlx/io/SerializingBufferWriter.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2016-11-14 17:44:13.552
+!MESSAGE The Java indexing could not index C:/Users/BRISSA/Downloads/mysql-connector-java-6.0.5.jar|com/mysql/cj/mysqlx/io/SqlResultMessageListener.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.core 2 0 2016-11-14 17:44:13.650
+!MESSAGE The Java indexing could not index C:/Users/BRISSA/Downloads/mysql-connector-java-6.0.5.jar|com/mysql/cj/mysqlx/io/TlsEncryptingByteChannel.class. This .class file doesn't follow the class file format specification. Please report this issue against the .class file vendor
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2016-11-14 17:45:07.845
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [proyecto [in src [in Emir]] does not exist]
+	at org.eclipse.jdt.internal.core.MultiOperation.processElements(MultiOperation.java:175)
+	at org.eclipse.jdt.internal.core.CopyResourceElementsOperation.processElements(CopyResourceElementsOperation.java:417)
+	at org.eclipse.jdt.internal.core.MultiOperation.executeOperation(MultiOperation.java:90)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:728)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1975)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:793)
+	at org.eclipse.jdt.internal.core.JavaModel.runOperation(JavaModel.java:297)
+	at org.eclipse.jdt.internal.core.JavaModel.move(JavaModel.java:258)
+	at org.eclipse.jdt.internal.core.CompilationUnit.move(CompilationUnit.java:1105)
+	at org.eclipse.jdt.internal.corext.refactoring.changes.MoveCompilationUnitChange.doPerformReorg(MoveCompilationUnitChange.java:85)
+	at org.eclipse.jdt.internal.corext.refactoring.changes.CompilationUnitReorgChange.perform(CompilationUnitReorgChange.java:64)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.jdt.internal.ui.text.correction.proposals.ChangeCorrectionProposal.performChange(ChangeCorrectionProposal.java:169)
+	at org.eclipse.jdt.internal.ui.text.correction.proposals.ChangeCorrectionProposal.apply(ChangeCorrectionProposal.java:98)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.insertProposal(CompletionProposalPopup.java:933)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.insertSelectedProposalWithMask(CompletionProposalPopup.java:879)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.access$27(CompletionProposalPopup.java:875)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$5.widgetDefaultSelected(CompletionProposalPopup.java:657)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:119)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4066)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3657)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2629)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2593)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2427)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:670)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:663)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:115)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:619)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1407)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2016-11-14 17:45:07.847
+!MESSAGE proyecto [in src [in Emir]] does not exist
+!SESSION 2016-11-15 18:29:35.338 -----------------------------------------------
+eclipse.buildId=I20100608-0911
+java.version=1.7.0_79
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=es_MX
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.core.resources 2 10035 2016-11-15 18:29:55.133
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2016-11-15 18:33:30.217
+!MESSAGE Failed to create image directory C:\Users\BRISSA\Desktop\Emir\.metadata\.plugins\org.eclipse.jdt.ui\jdt-images
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2016-11-15 20:07:44.589
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [gestionbasedatos [in gestionbasedatos/src/gestionbasedatos [in Emir]] does not exist]
+	at org.eclipse.jdt.internal.core.MultiOperation.processElements(MultiOperation.java:175)
+	at org.eclipse.jdt.internal.core.CopyResourceElementsOperation.processElements(CopyResourceElementsOperation.java:417)
+	at org.eclipse.jdt.internal.core.MultiOperation.executeOperation(MultiOperation.java:90)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:728)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1975)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:793)
+	at org.eclipse.jdt.internal.core.JavaModel.runOperation(JavaModel.java:297)
+	at org.eclipse.jdt.internal.core.JavaModel.move(JavaModel.java:258)
+	at org.eclipse.jdt.internal.core.CompilationUnit.move(CompilationUnit.java:1105)
+	at org.eclipse.jdt.internal.corext.refactoring.changes.MoveCompilationUnitChange.doPerformReorg(MoveCompilationUnitChange.java:85)
+	at org.eclipse.jdt.internal.corext.refactoring.changes.CompilationUnitReorgChange.perform(CompilationUnitReorgChange.java:64)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.jdt.internal.ui.text.correction.proposals.ChangeCorrectionProposal.performChange(ChangeCorrectionProposal.java:169)
+	at org.eclipse.jdt.internal.ui.text.correction.proposals.ChangeCorrectionProposal.apply(ChangeCorrectionProposal.java:98)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.insertProposal(CompletionProposalPopup.java:933)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.insertSelectedProposalWithMask(CompletionProposalPopup.java:879)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.access$27(CompletionProposalPopup.java:875)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$5.widgetDefaultSelected(CompletionProposalPopup.java:657)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:119)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4066)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3657)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2629)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2593)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2427)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:670)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:663)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:115)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:619)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1407)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2016-11-15 20:07:44.620
+!MESSAGE gestionbasedatos [in gestionbasedatos/src/gestionbasedatos [in Emir]] does not exist
+!SESSION 2016-11-18 16:57:05.140 -----------------------------------------------
+eclipse.buildId=I20100608-0911
+java.version=1.7.0_79
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=es_MX
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.ltk.core.refactoring 4 10009 2016-11-18 19:26:14.728
+!MESSAGE Participant 'org.eclipse.jdt.debug.refactoring.launchConfiguration.typeRename' removed due to the following exception
+!STACK 1
+Java Model Exception: Java Model Status [[Working copy] PanelDatos.java [in <default> [in src [in Emir]]] does not exist]
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:492)
+	at org.eclipse.jdt.internal.core.Openable.getUnderlyingResource(Openable.java:343)
+	at org.eclipse.jdt.internal.core.CompilationUnit.getUnderlyingResource(CompilationUnit.java:930)
+	at org.eclipse.jdt.internal.core.SourceRefElement.getUnderlyingResource(SourceRefElement.java:226)
+	at org.eclipse.jdt.internal.launching.JavaMigrationDelegate.getResource(JavaMigrationDelegate.java:107)
+	at org.eclipse.jdt.internal.launching.JavaMigrationDelegate.updateResourceMapping(JavaMigrationDelegate.java:140)
+	at org.eclipse.jdt.internal.debug.core.refactoring.LaunchConfigurationProjectMainTypeChange.perform(LaunchConfigurationProjectMainTypeChange.java:157)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1975)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1975)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2016-11-18 19:26:14.767
+!MESSAGE [Working copy] PanelDatos.java [in <default> [in src [in Emir]]] does not exist
+
+!ENTRY org.eclipse.ltk.ui.refactoring 4 10000 2016-11-18 19:26:15.271
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [PanelDatos.java [in <default> [in src [in Emir]]] does not exist]
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:492)
+	at org.eclipse.jdt.internal.core.Openable.getUnderlyingResource(Openable.java:343)
+	at org.eclipse.jdt.internal.core.CompilationUnit.getUnderlyingResource(CompilationUnit.java:930)
+	at org.eclipse.jdt.internal.core.SourceRefElement.getUnderlyingResource(SourceRefElement.java:226)
+	at org.eclipse.jdt.internal.launching.JavaMigrationDelegate.getResource(JavaMigrationDelegate.java:107)
+	at org.eclipse.jdt.internal.launching.JavaMigrationDelegate.updateResourceMapping(JavaMigrationDelegate.java:140)
+	at org.eclipse.jdt.internal.debug.core.refactoring.LaunchConfigurationProjectMainTypeChange.perform(LaunchConfigurationProjectMainTypeChange.java:157)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1975)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1975)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2016-11-18 19:26:15.272
+!MESSAGE PanelDatos.java [in <default> [in src [in Emir]]] does not exist
+
+!ENTRY org.eclipse.jdt.core 4 969 2016-11-18 19:26:15.273
+!MESSAGE PanelDatos.java [in <default> [in src [in Emir]]] does not exist

@@ -1,0 +1,29 @@
+import java.sql.ResultSet;
+import java.sql.SQLException;
+public class Principal {
+
+	public static void main(String[] args) {
+		int opc=0;
+		MyDataAcces conexion = new MyDataAcces();
+		
+		System.out.println("Menu");
+		System.out.println("1. Registrar cliente");
+
+		
+		ResultSet resultado;
+		String nombres;
+		
+		resultado = conexion.getQuery("select * from cliente");
+		
+		try {
+			while(resultado.next()){
+				nombres = resultado.getString("Nombre");
+				System.out.println("nombre: "+nombres);
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}		
+	}
+}
+

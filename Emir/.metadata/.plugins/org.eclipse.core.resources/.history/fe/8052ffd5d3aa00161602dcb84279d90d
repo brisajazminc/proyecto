@@ -1,0 +1,48 @@
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.Scanner;
+public class Principal {
+
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in); 
+		MyDataAcces conexion = new MyDataAcces();
+		
+		System.out.println("Menu");
+		System.out.println("1. Registrar cliente");
+		opc = entrada.nextInt(); 
+		
+		
+		switch(opc) {
+		case 1: 
+			System.out.println(" + Registrar cliente +");
+			System.out.println("Codigo cliente: ");
+			int cc = entrada.nextInt();
+			System.out.println("Nombre: ");
+			String nombre = entrada.next();
+			System.out.println("Membrecia: ");
+			System.out.println(" ¡NOTA! ");
+			System.out.println("1. Normal ");
+			System.out.println("2. Gold");
+			int membrecia = entrada.nextInt();
+			
+			break;
+		}
+		
+		
+		ResultSet resultado;
+		String nombres;
+		
+		resultado = conexion.getQuery("select * from cliente");
+		
+		try {
+			while(resultado.next()){
+				nombres = resultado.getString("Nombre");
+				System.out.println("nombre: "+nombres);
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}		
+	}
+}
+

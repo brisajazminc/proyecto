@@ -1,0 +1,76 @@
+import java.awt.EventQueue;
+import java.awt.Font;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.border.TitledBorder;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+
+public class Formulario extends JFrame {
+
+  private JPanel contentPane;
+  private JTextField tf1;
+  private JTextField tf2;
+  private JLabel labelResultado;
+  private JButton btnConsultaPorCdigo;
+  private JLabel lblIngreseCdigoDe;
+  private JTextField tf3;
+
+  /**
+   * Launch the application.
+   */
+  public static void main(String[] args) {
+
+			JFrame miVentana = new JFrame("RENTA DE VIDEOS");
+
+			miVentana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+			miVentana.setSize(650, 380);
+			miVentana.setResizable(false);
+			miVentana.setLocationRelativeTo(null);
+
+			Principal principal = new Principal();
+
+			miVentana.add(principal);
+
+			miVentana.setVisible(true);
+
+		}
+
+}
+
+class Principal extends JPanel implements ActionListener {
+
+	public Principal() {
+		setLayout(null);
+
+		// Title.
+		TitledBorder titleBorder = new TitledBorder("RENTA DE VIDEOS");
+		titleBorder.setTitleFont(new Font("French Script MT", Font.PLAIN, 20));
+		setBorder(titleBorder);
+
+		// Subtitle.
+		Font fuente = new Font("Goudy Old Style", Font.PLAIN, 18);
+		JLabel a2 = new JLabel("Texto a analizar");
+		a2.setBounds(60, 25, 400, 100);
+		a2.setFont(fuente);
+		add(a2);
+
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+}

@@ -1,0 +1,40 @@
+import java.sql.*;
+ 
+public class conectar {
+    public static void main(String[] args) throws SQLException {
+        System.out.println("INICIO DE EJECUCIÓN.");
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/rentavideos", "root", "");
+            Statement st = conexion.createStatement();
+            st.executeUpdate("DROP TABLE IF EXISTS cliente;");
+            st.executeUpdate("CREATE TABLE cliente ('codigo_cliente' int(11) NOT NULL AUTO_INCREMENT, 'Nombre' varchar(50) NOT NULL, 'Membrecia' int(11) NOT NULL, PRIMARY KEY ('codigo_cliente'));");
+            st.executeUpdate("INSERT INTO cliente ('codigo_cliente','Nombre','Membrecia') VALUES (1, 'José', 1), (2, 'María', 2);");
+            ResultSet rs = st.executeQuery("SELECT * FROM cliente;");
+ 
+            if (rs != null) {
+                System.out.println("El listado de persona es el siguiente:");
+ 
+                while (rs.next()) {
+                    System.out.println("  ID: " + rs.getObject("codigo_cliente"));
+                    System.out.println("  Nombre completo: " + rs.getObject("Nombre"));
+                    System.out.println("  ID: " + rs.getObject("Membrecia"));
+                }
+                rs.close();
+            }
+            st.close();
+ 
+        }
+        catch(SQLException s)
+        {
+            System.out.println("Error: SQL.");
+            System.out.println("SQLException: " + s.getMessage());
+        }
+        catch(Exception s)
+        {
+            System.out.println("Error: Varios.");
+            System.out.println("SQLException: " + s.getMessage());
+        }
+        System.out.println("FIN DE EJECUCIÓN.");
+    }
+}

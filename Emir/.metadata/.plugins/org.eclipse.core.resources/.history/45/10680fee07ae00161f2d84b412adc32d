@@ -1,0 +1,67 @@
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.ButtonGroup;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JRadioButton;
+import javax.swing.JTextField;
+
+public class cliente extends JFrame implements ActionListener {
+	private JTextField campocodigo, campoNombre;
+	private JLabel codigo, etiquetaNombre, membrecia;
+	private ButtonGrupo grupoBotones;
+	private JButton boton1;
+
+	public cliente() {
+		setLayout(null);
+
+		JLabel codigo = new JLabel("Codigo cliente: ", JLabel.LEFT);
+		JTextField campocodigo = new JTextField();
+		add(codigo);
+		add(campocodigo);
+		JLabel etiquetaNombre = new JLabel("Nombre:", JLabel.LEFT);
+		JTextField campoNombre = new JTextField();
+		add(etiquetaNombre);
+		add(campoNombre);
+		JLabel membrecia = new JLabel("Membrecia:", JLabel.LEFT);
+		add(membrecia);
+		add(new JLabel(" "));
+		ButtonGroup grupoBotones = new ButtonGroup();
+		JRadioButton normal = new JRadioButton("Normal", true);
+		JRadioButton gold = new JRadioButton("Gold");
+		grupoBotones.add(normal);
+		grupoBotones.add(gold);
+		add(normal);
+		add(gold);
+
+		boton1 = new JButton("Aceptar");
+		boton1.setBounds(10, 80, 100, 30);
+		add(boton1);
+		boton1.addActionListener(this);
+	}
+
+	public void actionPerformed(ActionEvent e) {
+		if (e.getSource() == boton1) {
+
+			conexion conn = new conexion();
+			String c, n, m;
+			persona p = new persona();
+			c = campocodigo.getText();
+			n = camponombre;
+			m = campomembrecia;
+
+			p = new persona(c, n, m);
+
+			String cad = textfield1.getText();
+			setTitle(cad);
+		}
+	}
+
+	public static void main(String[] ar) {
+		cliente formulario1 = new cliente();
+		formulario1.setBounds(0, 0, 300, 150);
+		formulario1.setVisible(true);
+	}
+}

@@ -1,0 +1,17 @@
+
+public class persona {
+	
+	private String codigo, nombre, membrecia;
+	
+	public persona(){
+		
+	}
+	
+	public persona (int codigo, String nombre, String membrecia ){
+		
+	}
+	public String getCodigo(){
+		return codigo;
+	}
+
+}

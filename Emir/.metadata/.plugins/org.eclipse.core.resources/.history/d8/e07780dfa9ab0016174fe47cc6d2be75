@@ -1,0 +1,19 @@
+create database bdlistanegra;
+use bdlistanegra;
+create table listanegra(
+	id int auto_increment,
+	nombre varchar(90),
+	razon varchar(190),
+	edad int,
+	primary key(id)
+);
+
+insert into listanegra (nombre, razon, edad) values('Andrés','Rompió la llanta de mi bici',12);
+
+UPDATE listanegra
+SET nombre='Andrés',
+	razon='Rompió la llanta de mi bici', 
+	edad=13
+WHERE id='1';
+
+delete from listanegra where id=1;

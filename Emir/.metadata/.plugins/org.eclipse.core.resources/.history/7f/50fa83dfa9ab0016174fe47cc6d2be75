@@ -1,0 +1,230 @@
+/*
+ * Nombre de la clase: AdminBDListaNegra
+ * Descripción: Define métodos que se usan para mostrar y extraer registros
+    de la base de datos.
+ */
+package gestionbasedatos.clases;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableModel;
+
+/**
+ *
+ * @author gsu
+ */
+public class AdminBDListaNegra {
+    ConexionBD conectarBD= new ConexionBD("com.mysql.jdbc.Driver", "jdbc:mysql", "localhost:3306", "bdlistanegra", "root", "root");
+    
+    /**
+     * Método que recibe toda la información general de un nuevo registro y lo guarda a la base de datos
+     * @param reg
+     * @return boolean
+     * @throw SQLException.
+    */
+    public boolean GuardarNuevoRegistro(ListaNegra reg){
+        conectarBD.conectar();
+        boolean guardado = conectarBD.agregarDatosBD("insert into listanegra (nombre, razon, edad) "
+                + "values('"+reg.getNombre()+"','"+reg.getRazon()+"',"+reg.getEdad()+");");
+        conectarBD.desconectar();
+        return guardado;
+    }
+    
+    /**
+    * Método que muestra todos los registros agregandolos a una tabla
+    * @param pac.
+    */
+    public void cargarRegistrosTablas(javax.swing.JTable pac){
+        ListaNegra lista[];
+        lista = obtenerTodosRegistros();
+        for (ListaNegra reg : lista) {
+            DefaultTableModel tabla=(DefaultTableModel)pac.getModel();
+            String[] r=new String[4];
+            r[0] = Integer.toString(reg.getId());
+            r[1] = reg.getNombre();
+            r[2] = reg.getRazon();
+            r[3] = Integer.toString(reg.getEdad());
+            tabla.addRow(r);
+        }
+    }
+    
+    /**
+     * Método que retorna un array de registros almacenados en la tabla listanegra de la BD
+     * que coincidan con la búsqueda realizada
+     * @param busqueda
+     * @return arreglo de objetos de tipo listanegra
+     * @throw SQLException.
+    */
+    public ListaNegra[] obtenerTodosRegistros(String busqueda){
+        ListaNegra lista[];
+        conectarBD.conectar();
+        int numPac = Integer.parseInt(obtenerCampo(conectarBD.RealizarConsulta(
+                "select count(*) from listanegra where nombre like '%"+busqueda+"%' ;"),"count(*)"));
+        System.out.println("num pacientes "+numPac);
+        lista = new ListaNegra[numPac];
+        ResultSet consulta;
+        consulta = conectarBD.RealizarConsulta("select * from listanegra where nombre like '%"+busqueda+"%' ;");
+        try {
+            int i=0;
+            while(consulta.next()){
+                lista[i]=new ListaNegra();
+                lista[i].setId(Integer.parseInt(consulta.getString("id")));
+                lista[i].setNombre(consulta.getString("nombre"));
+                lista[i].setRazon(consulta.getString("razon"));
+                lista[i].setEdad(Integer.parseInt(consulta.getString("edad")));
+                i++;
+            }
+        } catch (SQLException ex) {
+            System.out.println("Error: "+ex.getMessage());
+        }
+        conectarBD.desconectar();
+        return lista;
+    }
+    
+    /**
+    * Método que retorna un array de listanegra almacenados en la tabla listanegra de la BD.
+    * @return arreglo de objetos de tipo listanegra
+    */
+    public ListaNegra[] obtenerTodosRegistros(){
+        ListaNegra lista[];
+        conectarBD.conectar();
+        int numPac = Integer.parseInt(obtenerCampo(conectarBD.RealizarConsulta("select count(*) from listanegra;"),"count(*)"));
+        lista = new ListaNegra[numPac];
+        ResultSet consulta;
+        consulta = conectarBD.RealizarConsulta("select * from listanegra;");
+        try {
+            int i=0;
+            while(consulta.next()){
+                lista[i]=new ListaNegra();
+                lista[i].setId(Integer.parseInt(consulta.getString("id")));
+                lista[i].setEdad(Integer.parseInt(consulta.getString("edad")));
+                lista[i].setNombre(consulta.getString("nombre"));
+                lista[i].setRazon(consulta.getString("razon"));
+                i++;
+            }
+        } catch (SQLException ex) {
+            System.out.println("Error: "+ex.getMessage());
+        }
+        conectarBD.desconectar();
+        return lista;
+    }
+    
+    /**
+     * Método que devuelve el valor de un campo espéficico que se le indique lo retorna como string
+     * si la consulta cuenta con muchas filas, se quedará con el último valor
+     * @param rel
+     * @param campo
+     * @return String
+     * @throw SQLException.
+    */
+    public String obtenerCampo(ResultSet rel,String campo){
+       String valCampo =new String();
+       try{
+            while(rel.next()){ 
+                valCampo=rel.getString(campo);
+            }
+        } catch (SQLException ex) {
+            System.out.println("Error: "+ex.getMessage());
+        }
+        return valCampo;
+    }
+    
+    /**
+     * Método que va filtrando datos de los registros mientras se teclean los datos en un jtxt
+     * los resultados de la búsqueda se muestran en una tabla
+     * @param pac
+     * @param busqueda
+    */
+    public void cargarRegistrosTablasMientrasEscribe(javax.swing.JTable pac,String busqueda){
+        ListaNegra lista[];
+        borrarContenidoTabla(pac);
+        lista = obtenerTodosRegistro(busqueda);
+        for (ListaNegra temp : lista) {
+            DefaultTableModel tabla=(DefaultTableModel)pac.getModel();
+            String[] r=new String[4];
+            r[0] = Integer.toString(temp.getId());
+            r[1] = temp.getNombre();
+            r[2] = temp.getRazon();
+            r[3] = Integer.toString(temp.getEdad());
+            tabla.addRow(r);
+        }
+    }
+    /**
+    * Método que recibe una tabla para eliminar su contenido
+    * @param  table
+    */
+    public void borrarContenidoTabla(javax.swing.JTable table){
+        DefaultTableModel tab =(DefaultTableModel) table.getModel();
+        while(table.getRowCount()>0){
+            tab.removeRow(tab.getRowCount()-1);
+        }
+    }
+
+    /**
+     *
+     * @param busqueda
+     * @return
+     */
+    public ListaNegra[] obtenerTodosRegistro(String busqueda){
+        ListaNegra lista[];
+        conectarBD.conectar();
+        int numPac = Integer.parseInt(obtenerCampo(conectarBD.RealizarConsulta(
+                "select count(*) from listanegra where nombre like '%"+busqueda+"%';"),"count(*)"));
+        lista = new ListaNegra[numPac];
+        ResultSet consulta;
+        consulta = conectarBD.RealizarConsulta("select * from listanegra where nombre like '%"+busqueda+"%' ;");
+        try {
+            int i=0;
+            while(consulta.next()){
+                lista[i]=new ListaNegra();
+                lista[i].setId(Integer.parseInt(consulta.getString("id")));
+                lista[i].setNombre(consulta.getString("nombre"));
+                lista[i].setRazon(consulta.getString("razon"));
+                lista[i].setEdad(Integer.parseInt(consulta.getString("edad")));
+                i++;
+            }
+        } catch (SQLException ex) {
+            System.out.println("Error: "+ex.getMessage());
+        }
+        conectarBD.desconectar();
+        return lista;
+    }
+    
+    /**
+    * Método que actualiza información de un sólo registro en la base de datos
+    * @param  pac
+    */
+    public void actualizarDatosGenerales(ListaNegra pac){
+        boolean actualizado;
+        conectarBD.conectar();
+        actualizado=conectarBD.actualizarDatos("UPDATE listanegra\n" +
+                            " SET nombre='"+pac.getNombre()+"',\n" +
+                            " razon='"+pac.getRazon()+"', \n" +
+                            " edad="+pac.getEdad()+"\n" +
+                            " WHERE id="+pac.getId()+";");
+        if(actualizado){
+            JOptionPane.showMessageDialog(null, "El registro ha sido actualizado correctamente.","Actulizando información",JOptionPane.INFORMATION_MESSAGE);
+        }else{
+            JOptionPane.showMessageDialog(null, "Ocurrió un eror al actulizar","Error", JOptionPane.ERROR_MESSAGE);
+        }
+        conectarBD.desconectar();
+    }
+    
+    /**
+     * Método elimina la información de un registro
+     * se eliminan
+     * @param regEliminar
+    */
+    public void eliminarRegistros(ListaNegra regEliminar){
+        boolean eliminado;
+        conectarBD.conectar();
+        eliminado = conectarBD.eliminarDatos("delete from listanegra where id="+regEliminar.getId()+";");
+        if(eliminado){
+            JOptionPane.showMessageDialog(null, "El registro ha sido eliminado.","Eliminando información",JOptionPane.INFORMATION_MESSAGE);
+        }else{
+            JOptionPane.showMessageDialog(null, "Ocurrió un eror al eliminar.","Error", JOptionPane.ERROR_MESSAGE);
+        }
+        conectarBD.desconectar();
+    }
+}

@@ -1,0 +1,7 @@
+public class menu {
+	public static void main(String[] ar) {
+		menu menu1 = new menu();
+		menu1.setBounds(0, 0, 500, 200);
+		menu1.setVisible(true);
+	}
+}

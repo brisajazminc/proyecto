@@ -1,0 +1,30 @@
+import java.sql.Date;
+
+public class rentavideos {
+
+	private int cliente, pelicula;
+	private Date fecha;
+
+	public rentavideos() {
+
+	}
+
+	public rentavideos(int cliente, int pelicula, Date fecha) {
+		this.cliente = cliente;
+		this.pelicula = pelicula;
+		this.fecha = fecha;
+	}
+
+	public int getCliente() {
+		return cliente;
+	}
+
+	public int getPelicula() {
+		return pelicula;
+	}
+
+	public Date getFecha() {
+		return fecha;
+	}
+
+}

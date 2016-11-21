@@ -1,0 +1,30 @@
+
+public class rentavideos {
+	
+	private int cliente, pelicula;
+	private String fecha;
+	
+	public rentavideos(){
+		
+	}
+	
+	public rentavideos (int cliente, int pelicula, String fecha ){
+		this.cliente = cliente;
+		this.pelicula = pelicula;
+		this.fecha = fecha;
+	}
+	
+	public int getCliente(){
+		return cliente;
+	}
+
+	public int getPelicula(){
+		return pelicula;
+	}
+
+
+	public String getFecha(){
+		return fecha;
+	}
+	
+}
